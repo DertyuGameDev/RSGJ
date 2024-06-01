@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     CharacterController controller;
     Vector3 Velocity;
+    bool isMoving;
 
     void Start()
     {
