@@ -51,7 +51,6 @@
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
-
 # Unity3D generated file on crash reports
 /[Ss]oviet[Gg]ame[Jj]amm/sysinfo.txt
 
