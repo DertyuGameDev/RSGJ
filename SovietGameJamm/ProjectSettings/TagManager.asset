@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Grass
   - Water
   - UI
   - GroundMask
-  - 
+  - NotLight
   - 
   - 
   - 
