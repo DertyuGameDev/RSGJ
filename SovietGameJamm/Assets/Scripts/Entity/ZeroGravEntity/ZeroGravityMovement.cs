@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaneMovementV2 : MonoBehaviour
+public class ZeroGravityMovement : MonoBehaviour
 {
     [SerializeField] float throttleIncrement = 0.1f;
     [SerializeField] float minThrottle = 10f;
