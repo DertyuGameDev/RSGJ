@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     public GameObject speakingPanel;
     public TMP_Text dlog;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         inst = this;
     }
