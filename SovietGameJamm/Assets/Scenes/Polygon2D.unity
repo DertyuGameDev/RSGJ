@@ -4048,13 +4048,8 @@ MonoBehaviour:
     pharetra augue, sit amet blandit est pellentesque et. Ut libero ipsum, sagittis
     eu ligula et, sollicitudin suscipit dolor.'
   m_isRightToLeft: 0
-<<<<<<< Updated upstream
   m_fontAsset: {fileID: 11400000, guid: 13cf6ed4b34d8ea40b9bd6af48534e3d, type: 2}
   m_sharedMaterial: {fileID: -198030970914404912, guid: 13cf6ed4b34d8ea40b9bd6af48534e3d,
-=======
-  m_fontAsset: {fileID: 11400000, guid: 0acf4cff9c4cbe74e877a696ce7c7449, type: 2}
-  m_sharedMaterial: {fileID: 609581328881585209, guid: 0acf4cff9c4cbe74e877a696ce7c7449,
->>>>>>> Stashed changes
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
