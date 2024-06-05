@@ -21,6 +21,7 @@ MonoBehaviour:
     cha: {fileID: 0}
     facingLeft: 0
   isLeftSpeaking: 0
+  timeBetweenCharacters: 0.1
   lines:
   - Hi!
   - How Are You?

@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f6c718bfdf5d54ca16dba14f382ded, type: 3}
   m_Name: BadResponse
   m_EditorClassIdentifier: 
+  Left:
+    charName: 
+    cha: {fileID: 0}
+    facingLeft: 0
+  Right:
+    charName: 
+    cha: {fileID: 0}
+    facingLeft: 0
+  isLeftSpeaking: 0
+  timeBetweenCharacters: 0.1
   lines:
   - Oh I'm Sorry.
   - Good Bye!
