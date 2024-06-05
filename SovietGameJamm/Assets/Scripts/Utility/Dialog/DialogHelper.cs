@@ -74,6 +74,7 @@ public class DialogHelper : MonoBehaviour
             inst.dialogueTreeStarted.Invoke(inst.di.name);
         }
         inst.dialogueObjectChanged.Invoke(inst.di.name);
+        print(inst.di.name);
         inst.di = du;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -98,9 +99,10 @@ public class DialogHelper : MonoBehaviour
 
         }
         else {
-            inst.di = null;
+            
             UIManager.toggleSpeakingPanel(false);
             inst.dialogueEnded.Invoke(inst.di.name);
+            inst.di = null;
             StartDialogueScript.EndOfDialogue();
         }
     }
