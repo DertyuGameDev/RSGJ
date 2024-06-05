@@ -39,7 +39,7 @@ public class DialogHelper : MonoBehaviour
         ResponsePanelHelper.clearResponses();
         if (inst.di) {
             inst.ind = 0;
-            UIManager.updateTextDisplay(inst.di.lines[0],inst.di,0.1f);
+            UIManager.updateTextDisplay(inst.di.lines[0],inst.di, inst.di.timeBetweenCharacters);
             
         }
     }
@@ -55,7 +55,7 @@ public class DialogHelper : MonoBehaviour
         ResponsePanelHelper.clearResponses();
         if (inst.ind <= inst.di.lines.Length - 1)
         {
-            UIManager.updateTextDisplay(inst.ind,inst.di.lines[inst.ind], inst.di, 0.1f);
+            UIManager.updateTextDisplay(inst.ind,inst.di.lines[inst.ind], inst.di, inst.di.timeBetweenCharacters);
 
         }
         else {

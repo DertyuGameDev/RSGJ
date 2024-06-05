@@ -21,7 +21,7 @@ public class Dialogue : ScriptableObject
     public Character Left;
     public Character Right;
     public bool isLeftSpeaking;
-    
+    public float timeBetweenCharacters;
     public string[] lines;
     public string[] defResponses;
     public Options[] opt;
