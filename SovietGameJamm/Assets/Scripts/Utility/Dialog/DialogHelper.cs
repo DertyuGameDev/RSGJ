@@ -74,6 +74,7 @@ public class DialogHelper : MonoBehaviour
         }
         else {
             UIManager.toggleSpeakingPanel(false);
+            StartDialogueScript.EndOfDialogue();
         }
     }
     public static void next(Dialogue d)

@@ -19,7 +19,6 @@ public class PlayerController2D : MonoBehaviour
     public float cooldownJump;
     public bool canJump;
     [SerializeField] LayerMask Ground;
-
     private void Awake()
     {
         controls = new Controls();

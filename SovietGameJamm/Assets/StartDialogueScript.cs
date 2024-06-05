@@ -12,6 +12,7 @@ public class StartDialogueScript : MonoBehaviour
     public Dialogue dialogue;
     public Controls control;
     public PlayerController2D playerController;
+    public string cutscene;
     private void Awake()
     {
         control = new Controls();
@@ -35,8 +36,12 @@ public class StartDialogueScript : MonoBehaviour
         {
             GetComponent<BoxCollider>().enabled = false;
             press.SetActive(false);
+            playerController.gameObject.GetComponent<Animator>().Play("New State");
             playerController.enabled = false;
-            CutsceneManager.Instance.StartCutscene("Polygon");
+            if (cutscene != "")
+            {
+                CutsceneManager.Instance.StartCutscene(cutscene);
+            }
         }
     }
     private void OnTriggerExit(Collider other)
@@ -50,7 +55,7 @@ public class StartDialogueScript : MonoBehaviour
     }
     public void EndOfD()
     {
-        dialogueObject.SetActive(false);
         playerController.enabled = true;
+        CutsceneManager.Instance.EndCutscene();
     }
 }
