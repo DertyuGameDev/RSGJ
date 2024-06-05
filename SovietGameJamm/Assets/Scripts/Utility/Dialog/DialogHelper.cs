@@ -13,7 +13,7 @@ public class DialogHelper : MonoBehaviour
     private void Start()
     {
         inst = this;
-        startd();
+        UIManager.toggleSpeakingPanel(false);
     }
     // Update is called once per frame
     void Update()
@@ -40,7 +40,8 @@ public class DialogHelper : MonoBehaviour
         if (inst.di) {
             inst.ind = 0;
             if (inst.ind <= inst.di.clips.Length - 1) {
-                if (inst.di.clips[inst.ind]) {
+                if (inst.di.clips !=null && inst.di.clips[inst.ind] != null)
+                {
                     inst.asr.PlayOneShot(inst.di.clips[inst.ind]);
                 }
             }
@@ -63,7 +64,7 @@ public class DialogHelper : MonoBehaviour
         {
             if (inst.ind <= inst.di.clips.Length - 1)
             {
-                if (inst.di.clips[inst.ind])
+                if (inst.di.clips != null && inst.di.clips[inst.ind] != null)
                 {
                     inst.asr.PlayOneShot(inst.di.clips[inst.ind]);
                 }

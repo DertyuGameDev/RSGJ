@@ -1191,7 +1191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1062323553
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1369,11 +1369,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1820, y: 720}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -2521,7 +2521,6 @@ MonoBehaviour:
   dialogueObject: {fileID: 4333351815264496252}
   press: {fileID: 204697198}
   dialogue: {fileID: 11400000, guid: b5fc9c3149d635c4d8931f830fe3830d, type: 2}
-  dialogHelper: {fileID: 7771651971399604968}
   playerController: {fileID: 751486602}
 --- !u!114 &1845186553
 MonoBehaviour:
@@ -3286,10 +3285,10 @@ RectTransform:
   - {fileID: 8834595499407537424}
   m_Father: {fileID: 1102171629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 27.378}
-  m_SizeDelta: {x: 1920, y: 600}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.00091552734, y: 0.000579834}
+  m_SizeDelta: {x: -876.07, y: -492.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2620033263249009906
 MonoBehaviour:
@@ -3537,7 +3536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &4785517113076979734
 CanvasRenderer:
   m_ObjectHideFlags: 0
