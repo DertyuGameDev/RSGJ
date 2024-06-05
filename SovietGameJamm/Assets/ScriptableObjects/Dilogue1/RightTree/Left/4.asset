@@ -13,18 +13,20 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   Left:
-    charName: 
-    cha: {fileID: 0}
+    charName: "\u042E\u0440\u0438\u0439"
+    cha: {fileID: 21300000, guid: ac24cc156dc211f44b196c354a898d6f, type: 3}
     facingLeft: 0
   Right:
-    charName: 
-    cha: {fileID: 0}
-    facingLeft: 0
-  isLeftSpeaking: 0
+    charName: "\u0413\u0435\u0440\u043C\u0430\u043D"
+    cha: {fileID: 21300000, guid: 0d86c1d9aa4d2464391c1f40a80f1aaf, type: 3}
+    facingLeft: 1
+  isLeftSpeaking: 1
+  timeBetweenCharacters: 0
   lines:
   - "\u042D\u0445\u0445\u0445\u0445\u0445, \u043B\u0430\u0434\u043D\u043E, \u0441\u0430\u043C
     \u0442\u044B \u0436\u0438\u0440\u043D\u044B\u0439!"
   defResponses: []
+  clips: []
   opt:
   - optName: "\u041D\u0443 \u0445\u043E\u0440\u043E\u0448\u043E, \u0434\u043E \u0441\u043A\u043E\u0440\u043E\u0439
       \u0432\u0441\u0442\u0440\u0435\u0447\u0438!"

@@ -9,7 +9,7 @@ public class ResponsePanelHelper : MonoBehaviour
     public GameObject respButt;
     public GameObject responsesPanel;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         inst = this;
         responseButtons = new List<GameObject>();

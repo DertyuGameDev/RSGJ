@@ -13,20 +13,22 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   Left:
-    charName: 
-    cha: {fileID: 0}
+    charName: "\u042E\u0440\u0438\u0439"
+    cha: {fileID: 21300000, guid: ac24cc156dc211f44b196c354a898d6f, type: 3}
     facingLeft: 0
   Right:
-    charName: 
-    cha: {fileID: 0}
-    facingLeft: 0
-  isLeftSpeaking: 0
+    charName: "\u0413\u0435\u0440\u043C\u0430\u043D"
+    cha: {fileID: 21300000, guid: 0d86c1d9aa4d2464391c1f40a80f1aaf, type: 3}
+    facingLeft: 1
+  isLeftSpeaking: 1
+  timeBetweenCharacters: 0
   lines:
   - "\u0421\u0447\u0438\u0442\u0430\u0439, \u0447\u0442\u043E \u0443 \u0442\u0435\u0431\u044F
     \u0443\u0436\u0435 \u0435\u0441\u0442\u044C \u043E\u0434\u0438\u043D \u0447\u0435\u043B\u043E\u0432\u0435\u043A, 
     \u044F \u0434\u0443\u043C\u0430\u044E \u043C\u0430\u0439\u043E\u0440 \u043C\u043E\u0436\u0435\u0442
     \u0431\u044B\u0442\u044C \u0432\u0442\u043E\u0440\u044B\u043C."
   defResponses: []
+  clips: []
   opt:
   - optName: "\u041E\u043D \u0432 \u041A\u041F\u0421\u0421?"
     next: {fileID: 11400000, guid: 448fdd6bce781c4459cbb80b7f099599, type: 2}
