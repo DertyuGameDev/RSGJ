@@ -43,9 +43,17 @@ public class PlayerController2D : MonoBehaviour
                 GetComponent<SpriteRenderer>().flipX = false; break;
         }
         Vector3 moveDir = new Vector3(-move, 0, 0);
-        if (moveDir != Vector3.zero)
+        if (moveDir != Vector3.zero && CheckGround())
         {
             GetComponent<Animator>().Play("Walk");
+        }
+        else if (!CheckGround())
+        {
+            GetComponent<Animator>().Play("JumpMid");
+        }
+        else if (CheckGround() && !canJump)
+        {
+            GetComponent<Animator>().Play("JumpEnd");
         }
         else
         {
@@ -67,6 +75,7 @@ public class PlayerController2D : MonoBehaviour
         if (CheckGround() && canJump)
         {
             canJump = false;
+            GetComponent<Animator>().Play("JumpStart");
             Invoke("ResetJump", cooldownJump);
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
