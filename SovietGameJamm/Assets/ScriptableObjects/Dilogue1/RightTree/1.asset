@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f6c718bfdf5d54ca16dba14f382ded, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  Left:
+    charName: 
+    cha: {fileID: 0}
+    facingLeft: 0
+  Right:
+    charName: 
+    cha: {fileID: 0}
+    facingLeft: 0
+  isLeftSpeaking: 0
+  lines:
+  - "\u041A\u0430\u043A? \u041F\u043E\u0447\u0435\u043C\u0443?"
+  defResponses: []
+  opt:
+  - optName: "\u041D\u0443, \u0442\u044B \u043D\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u0438\u0448\u044C
+      \u043F\u043E\u0434 \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u044B \u043A\u043E\u0441\u043C\u043E\u043D\u0430\u0432\u0442\u0430"
+    next: {fileID: 11400000, guid: a1c6bbc1d42a2fe449f8ea423535010a, type: 2}
+  - optName: "\u0422\u044B \u043C\u043D\u0435 \u043D\u0435 \u043D\u0440\u0430\u0432\u0438\u0448\u044C\u0441\u044F,
+      \u042E\u0440\u0430!"
+    next: {fileID: 11400000, guid: 0d9e13bca16830741b86c228989f23a3, type: 2}
