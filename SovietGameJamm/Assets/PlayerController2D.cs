@@ -42,7 +42,15 @@ public class PlayerController2D : MonoBehaviour
             case 1:
                 GetComponent<SpriteRenderer>().flipX = false; break;
         }
-        Vector3 moveDir = new Vector3(0, 0, move);
+        Vector3 moveDir = new Vector3(-move, 0, 0);
+        if (moveDir != Vector3.zero)
+        {
+            GetComponent<Animator>().Play("Walk");
+        }
+        else
+        {
+            GetComponent<Animator>().Play("Idle");
+        }
         rb.velocity += moveDir * walkSpeed;
     }
     private void OnEnable()
@@ -76,11 +84,11 @@ public class PlayerController2D : MonoBehaviour
     #endregion
     private void LimitVelocity()
     {
-        if (Mathf.Abs(rb.velocity.z) > maxSpeed)
+        if (Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
-            Vector3 move = new Vector3(0, 0, rb.velocity.z);
+            Vector3 move = new Vector3(rb.velocity.x, 0, 0);
             move.Normalize();
-            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y,  maxSpeed * move.z);
+            rb.velocity = new Vector3(maxSpeed * move.x, rb.velocity.y, rb.velocity.z);
         }
     }
     private void OnDrawGizmos()

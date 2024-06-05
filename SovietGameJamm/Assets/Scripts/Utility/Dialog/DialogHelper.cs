@@ -10,13 +10,11 @@ public class DialogHelper : MonoBehaviour
     public CharacterManager Left;
     public CharacterManager Right;
     public AudioSource asr;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         inst = this;
         startd();
     }
-
     // Update is called once per frame
     void Update()
     {

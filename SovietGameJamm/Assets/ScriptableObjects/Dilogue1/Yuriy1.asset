@@ -13,20 +13,22 @@ MonoBehaviour:
   m_Name: Yuriy1
   m_EditorClassIdentifier: 
   Left:
-    charName: 
-    cha: {fileID: 21300000, guid: b53b638fb3ad1ac47b984ec43486569e, type: 3}
+    charName: "\u042E\u0440\u0438\u0439"
+    cha: {fileID: 21300000, guid: ac24cc156dc211f44b196c354a898d6f, type: 3}
     facingLeft: 0
   Right:
-    charName: 
-    cha: {fileID: 21300000, guid: b40c1dcdc9c5544458eba7d5dd464228, type: 3}
-    facingLeft: 0
+    charName: "\u0413\u0435\u0440\u043C\u0430\u043D"
+    cha: {fileID: 21300000, guid: 0d86c1d9aa4d2464391c1f40a80f1aaf, type: 3}
+    facingLeft: 1
   isLeftSpeaking: 1
+  timeBetweenCharacters: 0
   lines:
   - "\u041D\u0430\u0434\u043E \u0436\u0435, \u043D\u0430\u0448, \u0441\u043E\u0432\u0435\u0442\u0441\u043A\u0438\u0439,
     \u0438 \u0432 \u043A\u043E\u0441\u043C\u043E\u0441\u0435!"
   defResponses:
   - "\u041D\u0430\u0434\u043E \u0436\u0435, \u043D\u0430\u0448, \u0441\u043E\u0432\u0435\u0442\u0441\u043A\u0438\u0439,
     \u0438 \u0432 \u043A\u043E\u0441\u043C\u043E\u0441\u0435!"
+  clips: []
   opt:
   - optName: "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E!
       \u042F \u0431\u044B \u0442\u043E\u0436\u0435 \u0445\u043E\u0442\u0435\u043B
