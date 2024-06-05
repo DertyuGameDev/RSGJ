@@ -790,6 +790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   di: {fileID: 11400000, guid: 0c796bb986fbb134183538c0afd47eac, type: 2}
   ind: 0
+  Left: {fileID: 331626517}
+  Right: {fileID: 1561099402}
 --- !u!114 &1079324339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakingPanel: {fileID: 1618288455}
   dlog: {fileID: 622325414}
+  nam: {fileID: 518196561}
 --- !u!1 &1176297303
 GameObject:
   m_ObjectHideFlags: 0

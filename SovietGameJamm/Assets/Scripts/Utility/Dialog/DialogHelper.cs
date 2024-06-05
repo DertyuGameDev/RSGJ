@@ -7,6 +7,8 @@ public class DialogHelper : MonoBehaviour
     public Dialogue di;
     public int ind = 0;
     public static DialogHelper inst;
+    public CharacterManager Left;
+    public CharacterManager Right;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,19 @@ public class DialogHelper : MonoBehaviour
         
     }
     public static void startd() {
+        inst.Left.changeCharacter(inst.di.Left.cha);
+        inst.Left.changeDir(inst.di.Left.facingLeft);
+        inst.Left.speakingMode(inst.di.isLeftSpeaking);
+        inst.Right.changeCharacter(inst.di.Right.cha);
+        inst.Right.changeDir(inst.di.Right.facingLeft);
+        inst.Right.speakingMode(inst.di.isLeftSpeaking);
+        if (inst.di.isLeftSpeaking)
+        {
+            UIManager.updateNameDisplay(inst.di.Left.charName, true);
+        }
+        else {
+            UIManager.updateNameDisplay(inst.di.Right.charName, false);
+        }
         UIManager.toggleSpeakingPanel(true);
         ResponsePanelHelper.clearResponses();
         if (inst.di) {

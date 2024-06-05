@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f6c718bfdf5d54ca16dba14f382ded, type: 3}
   m_Name: GoodResponse
   m_EditorClassIdentifier: 
+  Left:
+    charName: Alexey
+    cha: {fileID: 21300000, guid: 5e3c1f3c3437d044eb91268bc6e4cd85, type: 3}
+    facingLeft: 0
+  Right:
+    charName: 
+    cha: {fileID: 0}
+    facingLeft: 0
+  isLeftSpeaking: 1
   lines:
   - Nice to hear!
   - Good Bye!
