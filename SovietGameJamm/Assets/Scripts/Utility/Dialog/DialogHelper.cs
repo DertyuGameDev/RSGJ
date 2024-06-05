@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
+[System.Serializable]
+public class StringCallback : UnityEvent<string>
+{
+}
 public class DialogHelper : MonoBehaviour
 {
     public Dialogue di;
@@ -10,6 +15,18 @@ public class DialogHelper : MonoBehaviour
     public CharacterManager Left;
     public CharacterManager Right;
     public AudioSource asr;
+    //triggers when a dialogue tree starts
+    public StringCallback dialogueTreeStarted;
+    //triggers when a new dialogue object is utilized
+    public StringCallback dialogueObjectChanged;
+    //triggers when a dialogue tree ends
+    public StringCallback dialogueEnded;
+    //triggers when a line is started
+    public StringCallback lineStarted;
+    //triggers when a line is finished printing
+    public StringCallback linePrinted;
+    //triggers when the next line/dialogue is called
+    public StringCallback nextPressed;
     private void Start()
     {
         inst = this;
@@ -35,6 +52,7 @@ public class DialogHelper : MonoBehaviour
         else {
             UIManager.updateNameDisplay(inst.di.Right.charName, false);
         }
+        inst.lineStarted.Invoke(inst.di.name);
         UIManager.toggleSpeakingPanel(true);
         ResponsePanelHelper.clearResponses();
         if (inst.di) {
@@ -52,6 +70,10 @@ public class DialogHelper : MonoBehaviour
 
     public static void startd(Dialogue du)
     {
+        if (inst.di == null) {
+            inst.dialogueTreeStarted.Invoke(inst.di.name);
+        }
+        inst.dialogueObjectChanged.Invoke(inst.di.name);
         inst.di = du;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -71,11 +93,14 @@ public class DialogHelper : MonoBehaviour
                     inst.asr.PlayOneShot(inst.di.clips[inst.ind]);
                 }
             }
+
             UIManager.updateTextDisplay(inst.ind,inst.di.lines[inst.ind], inst.di, inst.di.timeBetweenCharacters);
 
         }
         else {
+            inst.di = null;
             UIManager.toggleSpeakingPanel(false);
+            inst.dialogueEnded.Invoke(inst.di.name);
             StartDialogueScript.EndOfDialogue();
         }
     }

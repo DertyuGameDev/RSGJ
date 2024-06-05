@@ -27,6 +27,7 @@ public class UIManager : MonoBehaviour
     }
     public static void updateTextDisplay(string s, Dialogue d, float t)
     {
+        DialogHelper.inst.lineStarted.Invoke(d.name);
         inst.StartCoroutine(inst.slowType(s, d, t));
     }
     public IEnumerator slowType(string s, Dialogue di, float tBWc)
@@ -37,6 +38,7 @@ public class UIManager : MonoBehaviour
             dlog.text += c.ToString();
             yield return new WaitForSeconds(tBWc);
         }
+        DialogHelper.inst.linePrinted.Invoke(di.name);
         if (di.lines.Length > 1)
         {
             ResponsePanelHelper.addResponse(di.defResponses[0]);
@@ -52,7 +54,7 @@ public class UIManager : MonoBehaviour
 
     public static void updateTextDisplay(int ind, string s, Dialogue d, float t)
     {
-
+        DialogHelper.inst.lineStarted.Invoke(d.name);
         inst.StartCoroutine(inst.slowType(ind, s, d, t));
     }
     public IEnumerator slowType(int ind, string s, Dialogue di, float tBWc)
@@ -63,6 +65,7 @@ public class UIManager : MonoBehaviour
             dlog.text += c.ToString();
             yield return new WaitForSeconds(tBWc);
         }
+        DialogHelper.inst.linePrinted.Invoke(di.name);
         if (ind <= di.defResponses.Length - 1)
         {
             ResponsePanelHelper.addResponse(di.defResponses[ind]);
