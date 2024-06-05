@@ -24,6 +24,7 @@ public class Dialogue : ScriptableObject
     public float timeBetweenCharacters;
     public string[] lines;
     public string[] defResponses;
+    public AudioClip[] clips;
     public Options[] opt;
     
 }

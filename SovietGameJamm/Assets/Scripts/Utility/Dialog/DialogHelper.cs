@@ -9,6 +9,7 @@ public class DialogHelper : MonoBehaviour
     public static DialogHelper inst;
     public CharacterManager Left;
     public CharacterManager Right;
+    public AudioSource asr;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class DialogHelper : MonoBehaviour
         
     }
     public static void startd() {
+        inst.asr.Stop();
         inst.Left.changeCharacter(inst.di.Left.cha);
         inst.Left.changeDir(inst.di.Left.facingLeft);
         inst.Left.speakingMode(inst.di.isLeftSpeaking);
@@ -39,6 +41,11 @@ public class DialogHelper : MonoBehaviour
         ResponsePanelHelper.clearResponses();
         if (inst.di) {
             inst.ind = 0;
+            if (inst.ind <= inst.di.clips.Length - 1) {
+                if (inst.di.clips[inst.ind]) {
+                    inst.asr.PlayOneShot(inst.di.clips[inst.ind]);
+                }
+            }
             UIManager.updateTextDisplay(inst.di.lines[0],inst.di, inst.di.timeBetweenCharacters);
             
         }
@@ -52,9 +59,17 @@ public class DialogHelper : MonoBehaviour
 
     public static void next() {
         inst.ind++;
+        inst.asr.Stop();
         ResponsePanelHelper.clearResponses();
         if (inst.ind <= inst.di.lines.Length - 1)
         {
+            if (inst.ind <= inst.di.clips.Length - 1)
+            {
+                if (inst.di.clips[inst.ind])
+                {
+                    inst.asr.PlayOneShot(inst.di.clips[inst.ind]);
+                }
+            }
             UIManager.updateTextDisplay(inst.ind,inst.di.lines[inst.ind], inst.di, inst.di.timeBetweenCharacters);
 
         }
