@@ -53,6 +53,8 @@ public class DialogHelper : MonoBehaviour
     public static void startd(Dialogue du)
     {
         inst.di = du;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         startd();
     }
 
