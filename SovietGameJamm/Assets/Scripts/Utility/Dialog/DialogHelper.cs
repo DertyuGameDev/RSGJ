@@ -9,6 +9,8 @@ public class StringCallback : UnityEvent<string>
 }
 public class DialogHelper : MonoBehaviour
 {
+    public static bool EndCut;
+    public bool end;
     public Dialogue di;
     public int ind = 0;
     public static DialogHelper inst;
@@ -29,6 +31,7 @@ public class DialogHelper : MonoBehaviour
     public StringCallback nextPressed;
     private void Start()
     {
+        EndCut = end;
         inst = this;
         UIManager.toggleSpeakingPanel(false);
     }
@@ -70,12 +73,8 @@ public class DialogHelper : MonoBehaviour
 
     public static void startd(Dialogue du)
     {
-        if (inst.di == null) {
-            inst.dialogueTreeStarted.Invoke(inst.di.name);
-        }
-        inst.dialogueObjectChanged.Invoke(inst.di.name);
-        print(inst.di.name);
         inst.di = du;
+        inst.dialogueObjectChanged.Invoke(inst.di.name);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         startd();
@@ -103,7 +102,10 @@ public class DialogHelper : MonoBehaviour
             UIManager.toggleSpeakingPanel(false);
             inst.dialogueEnded.Invoke(inst.di.name);
             inst.di = null;
-            StartDialogueScript.EndOfDialogue();
+            if (EndCut)
+            {
+                StartDialogueScript.EndOfDialogue();
+            }
         }
     }
     public static void next(Dialogue d)

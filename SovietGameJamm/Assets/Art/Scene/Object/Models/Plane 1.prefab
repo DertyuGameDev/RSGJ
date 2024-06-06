@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 1121998356433769321}
   - component: {fileID: 3979027721169453989}
   - component: {fileID: 8190952084687588097}
+  - component: {fileID: 67434995514904124}
   m_Layer: 8
   m_Name: Plane 1
   m_TagString: Untagged
@@ -577,15 +578,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb421f66bf473804eb1330920675235c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedPlane: 0
-  maxSpeed: 13000
-  driverIsOn: 0
-  speedRotationV: 400
-  speedRotationH: 400
-  g: 0
-  controler: {fileID: 1578916699661127898}
-  zavod: 0
-  t: 1
+  throttleIncrement: 0.1
+  minThrottle: 10
+  maxThrottle: -10
+  maxThrust: 200
+  responsivness: 10
+  pitchModifier: 10
+  yawModifier: 4
+  throttle: 0
 --- !u!95 &8190952084687588097
 Animator:
   serializedVersion: 5
@@ -607,6 +607,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &67434995514904124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093689346239880055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa9097e9f62a1248a027cacff54d7e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedPlane: 0.1
+  maxSpeed: 0
+  driverIsOn: 0
+  speedRotationV: 10
+  speedRotationH: 10
+  g: 0
+  controler: {fileID: 0}
+  zavod: 0
+  t: 0
 --- !u!1 &3354363237561198741
 GameObject:
   m_ObjectHideFlags: 0

@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3caf181d9ecd84d4ba4423c2cfe1f836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 
+  scene: SampleScene
 --- !u!1 &398073666
 GameObject:
   m_ObjectHideFlags: 3
@@ -5340,11 +5340,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd8730411b7c4d4eaebb9a638eee06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  end: 1
   di: {fileID: 11400000, guid: b5fc9c3149d635c4d8931f830fe3830d, type: 2}
   ind: 0
   Left: {fileID: 8744685475230312250}
   Right: {fileID: 961832752001847194}
   asr: {fileID: 5779390401559902212}
+  dialogueTreeStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueObjectChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  lineStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  linePrinted:
+    m_PersistentCalls:
+      m_Calls: []
+  nextPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7789245455484933768
 GameObject:
   m_ObjectHideFlags: 0

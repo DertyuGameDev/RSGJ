@@ -20,7 +20,7 @@ MonoBehaviour:
     charName: 
     cha: {fileID: 0}
     facingLeft: 0
-  isLeftSpeaking: 0
+  isLeftSpeaking: 1
   timeBetweenCharacters: 0
   lines:
   - "\u0425\u043E\u0440\u043E\u0448\u043E, \u0440\u0435\u0431\u044F\u0442\u043A\u0438!

@@ -10,7 +10,11 @@ public class StartScene : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene("");
+            SceneManager.LoadScene(scene);
         }
+    }
+    public void StartScenes()
+    {
+        SceneManager.LoadScene(scene);
     }
 }

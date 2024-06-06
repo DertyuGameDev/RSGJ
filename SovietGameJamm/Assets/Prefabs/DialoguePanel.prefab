@@ -336,6 +336,24 @@ MonoBehaviour:
   Left: {fileID: 197902892417208002}
   Right: {fileID: 8556091009136207458}
   asr: {fileID: 3157250153632862716}
+  dialogueTreeStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueObjectChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  lineStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  linePrinted:
+    m_PersistentCalls:
+      m_Calls: []
+  nextPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8241194875076978833
 MonoBehaviour:
   m_ObjectHideFlags: 0
