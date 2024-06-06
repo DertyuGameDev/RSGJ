@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class PlaneMovementV2 : MonoBehaviour
 {
     [SerializeField] float speedPlane = 0.1f;
@@ -18,6 +18,11 @@ public class PlaneMovementV2 : MonoBehaviour
     [Range(0f, 1f)]
     public float t;
     Rigidbody rb;
+    public TMP_Text erp;
+    public TMP_Text rotT;
+    public TMP_Text pos;
+    public Transform posit;
+    public Transform negat;
     private void Awake()
     {
         zavod = 0;
@@ -85,6 +90,27 @@ public class PlaneMovementV2 : MonoBehaviour
         if (speedPlane > maxSpeed)
         {
             speedPlane = maxSpeed;
+        }
+
+        erp.text = $"{this.transform.position.y:0.##}m  ";
+        rotT.text = $"{this.transform.eulerAngles.y:0.#}°";
+        pos.text = $"R: {roll:0.##}  P: {pitch:0.##}";
+
+        if (transform.position.x > posit.position.x) {
+            transform.position = new Vector3(negat.position.x, transform.position.y, transform.position.z);
+        }
+        if (transform.position.z > posit.position.z)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, negat.position.z);
+        }
+
+        if (transform.position.x < negat.position.x)
+        {
+            transform.position = new Vector3(posit.position.x, transform.position.y, transform.position.z);
+        }
+        if (transform.position.z < negat.position.z)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, posit.position.z);
         }
     }
 
