@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9544d2af504c2ab4cac553fb14725393
+  - enabled: 1
+    path: Assets/Scenes/Dialogue3.unity
+    guid: 89fbe23cae74dd047bc10003e8e4acdf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 654c8830bece3194bb192e6c91af403a,
       type: 2}

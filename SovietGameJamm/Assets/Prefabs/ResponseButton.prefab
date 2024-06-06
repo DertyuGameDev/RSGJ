@@ -65,10 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "\u0444\u044B\u0432\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0acf4cff9c4cbe74e877a696ce7c7449, type: 2}
-  m_sharedMaterial: {fileID: 609581328881585209, guid: 0acf4cff9c4cbe74e877a696ce7c7449,
+  m_fontAsset: {fileID: 11400000, guid: 13cf6ed4b34d8ea40b9bd6af48534e3d, type: 2}
+  m_sharedMaterial: {fileID: -198030970914404912, guid: 13cf6ed4b34d8ea40b9bd6af48534e3d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 20.25
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1

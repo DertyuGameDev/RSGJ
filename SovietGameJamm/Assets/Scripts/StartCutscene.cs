@@ -9,4 +9,8 @@ public class StartCutscene : MonoBehaviour
     {
         CutsceneManager.Instance.StartCutscene(cutscene);
     }
+    public void DeleteTrigger()
+    {
+        GetComponent<BoxCollider>().enabled = false;
+    }
 }

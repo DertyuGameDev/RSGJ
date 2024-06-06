@@ -6,25 +6,29 @@ using UnityEngine;
 
 public class StartDialogueScript : MonoBehaviour
 {
+    public bool StartCut;
     public static Action EndOfDialogue;
     public GameObject dialogueObject;
     public GameObject press;
     public Dialogue dialogue;
-    public Controls control;
     public PlayerController2D playerController;
     public string cutscene;
+    private IEnumerator StartDialogHelper()
+    {
+        yield return new WaitForSeconds(0.5f);
+        dialogueObject.SetActive(true);
+        DialogHelper.startd(dialogue);
+    }
     private void Awake()
     {
-        control = new Controls();
-        EndOfDialogue += EndOfD;
-    }
-    private void OnEnable()
-    {
-        control.Enable();
-    }
-    private void OnDisable()
-    {
-        control.Disable();
+        if (StartCut)
+        {
+            StartCoroutine(StartDialogHelper());
+        }
+        else
+        {
+            EndOfDialogue += EndOfD;
+        }
     }
     public void OnTriggerEnter(Collider other)
     {

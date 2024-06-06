@@ -331,6 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd8730411b7c4d4eaebb9a638eee06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  end: 0
   di: {fileID: 11400000, guid: b5fc9c3149d635c4d8931f830fe3830d, type: 2}
   ind: 0
   Left: {fileID: 197902892417208002}
@@ -819,8 +820,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Speaker Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 13cf6ed4b34d8ea40b9bd6af48534e3d, type: 2}
+  m_sharedMaterial: {fileID: -198030970914404912, guid: 13cf6ed4b34d8ea40b9bd6af48534e3d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
