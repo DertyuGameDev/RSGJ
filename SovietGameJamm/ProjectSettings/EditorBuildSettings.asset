@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exam.unity
     guid: 594443a014f79b74dab3c507b469dfa4
+  - enabled: 1
+    path: Assets/Scenes/MiniGamePhone.unity
+    guid: def4d5060271bd946b2fb3e67d3c4c40
+  - enabled: 1
+    path: Assets/Scenes/PlaneMain.unity
+    guid: 3ab3129999612504d865828bfe70b92b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 654c8830bece3194bb192e6c91af403a,
       type: 2}

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1757604703920442232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 82.38918, y: -5.0373573, z: -35.565628}
+  m_LocalPosition: {x: 83.98924, y: -4.737357, z: -35.565636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -100,8 +100,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4382890360291063865}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 82.38918, y: -5.0373573, z: -35.565628}
+  m_LocalRotation: {x: -0, y: -0.7071067, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 83.98924, y: -4.737357, z: -35.565636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0.2, z: -6.6}
+  m_FollowOffset: {x: 0, y: 0.5, z: -8.2}
   m_XDamping: 0.5
   m_YDamping: 1
   m_ZDamping: 1
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 2371759828797200698}
   m_Layer: 0
   m_Name: Player2d
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,7 +482,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b40c1dcdc9c5544458eba7d5dd464228, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d86c1d9aa4d2464391c1f40a80f1aaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -555,12 +555,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5765958570528786905}
   RaycastGameobject: {fileID: 3654425731665648114}
-  distanceToDirty: 1.74
+  distanceToDirty: 1.86
   walkSpeed: 4
   maxSpeed: 0
   isGround: 0
   jumpForce: 5
-  cooldownJump: 0.15
+  cooldownJump: 1.2
   canJump: 1
   Ground:
     serializedVersion: 2

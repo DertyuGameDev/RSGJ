@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f6c718bfdf5d54ca16dba14f382ded, type: 3}
+  m_Name: 11
+  m_EditorClassIdentifier: 
+  Left:
+    charName: 
+    cha: {fileID: 0}
+    facingLeft: 0
+  Right:
+    charName: "\u042E\u0440\u0438\u0439"
+    cha: {fileID: 21300000, guid: ac24cc156dc211f44b196c354a898d6f, type: 3}
+    facingLeft: 1
+  isLeftSpeaking: 0
+  timeBetweenCharacters: 0
+  lines:
+  - "(\u041E\u043D \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u043E \u043D\u0435
+    \u0445\u043E\u0447\u0435\u0442 \u0441 \u0432\u0430\u043C\u0438 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C,
+    \u043A\u0430\u0436\u0435\u0442\u0441\u044F, \u043E\u043D \u0441\u0438\u043B\u044C\u043D\u043E
+    \u043E\u0431\u0438\u0436\u0435\u043D)"
+  defResponses: []
+  clips: []
+  opt:
+  - optName: ...
+    next: {fileID: 0}

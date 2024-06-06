@@ -1440,6 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483b043c1842df047bd10226b1981d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartCut: 0
   dialogueObject: {fileID: 4333351815264496252}
   press: {fileID: 1115125973}
   dialogue: {fileID: 11400000, guid: b24e7a5bbea1a8b49b2aefaefb32c083, type: 2}
@@ -2274,11 +2275,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1757604703920442232, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2821528004348256769, guid: 81bbe076fb02fc44aad8cc515ef14777,
         type: 3}
       propertyPath: cooldownJump
@@ -2288,11 +2284,6 @@ PrefabInstance:
         type: 3}
       propertyPath: distanceToDirty
       value: 1.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 3049020858320204393, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6655919186035496896, guid: 81bbe076fb02fc44aad8cc515ef14777,
         type: 3}
@@ -2321,18 +2312,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6750295749944942959, guid: 81bbe076fb02fc44aad8cc515ef14777,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6750295749944942959, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 6750295749944942959, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8116787628203718394, guid: 81bbe076fb02fc44aad8cc515ef14777,
         type: 3}
@@ -2342,33 +2323,8 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 8116787628203718394, guid: 81bbe076fb02fc44aad8cc515ef14777,
         type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8116787628203718394, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432598559841309983, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: field of view
-      value: 61.000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432598559841309983, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: far clip plane
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432598559841309983, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8432598559841309983, guid: 81bbe076fb02fc44aad8cc515ef14777,
-        type: 3}
-      propertyPath: orthographic size
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8648830909899959668, guid: 81bbe076fb02fc44aad8cc515ef14777,
         type: 3}
@@ -3368,6 +3324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483b043c1842df047bd10226b1981d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartCut: 0
   dialogueObject: {fileID: 4333351815264496252}
   press: {fileID: 204697198}
   dialogue: {fileID: 11400000, guid: b5fc9c3149d635c4d8931f830fe3830d, type: 2}
@@ -5362,6 +5319,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   nextPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  choosePress:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &7789245455484933768

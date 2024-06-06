@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class Relationship : MonoBehaviour
 {
-    public static int relationship;
-    void Start()
-    {
-        relationship = 0;
-        DontDestroyOnLoad(gameObject);
-    }
+    public static int relationship = 0;
     public void PlusRelation()
     {
         relationship += 1;
