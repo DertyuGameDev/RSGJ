@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class PlaneMovementV2 : MonoBehaviour
 {
@@ -21,8 +22,11 @@ public class PlaneMovementV2 : MonoBehaviour
     public TMP_Text erp;
     public TMP_Text rotT;
     public TMP_Text pos;
+    public Scrollbar scrol;
     public Transform posit;
     public Transform negat;
+    public Color On;
+    public Color Off;
     private void Awake()
     {
         zavod = 0;
@@ -38,6 +42,15 @@ public class PlaneMovementV2 : MonoBehaviour
 
     private void Update()
     {
+        scrol.size = zavod / 100;
+        if (driverIsOn)
+        {
+            scrol.gameObject.GetComponent<Image>().color =  On;
+        }
+        else
+        {
+            scrol.gameObject.GetComponent<Image>().color = Off;
+        }
         g = onGround;
         if (speedPlane <= 0 && onGround)
         {
@@ -52,7 +65,7 @@ public class PlaneMovementV2 : MonoBehaviour
         controler.localRotation = Quaternion.Slerp(Quaternion.Euler(0, 0, 0), Quaternion.Euler(rot * 10), t);
         if (Input.GetKey(KeyCode.LeftShift) && driverIsOn == false)
         {
-            zavod += 1;
+            zavod += 5;
             if (zavod > 100)
             {
                 driverIsOn = true;
@@ -72,7 +85,7 @@ public class PlaneMovementV2 : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftControl) && driverIsOn)
         {
-            zavod += 1;
+            zavod += 5;
             if (zavod > 100)
             {
                 driverIsOn = false;

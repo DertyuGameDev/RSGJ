@@ -37,6 +37,6 @@ MonoBehaviour:
   clips: []
   opt:
   - optName: "(\u0423\u0439\u0442\u0438)"
-    next: {fileID: 11400000, guid: 50d4d04e8efa673458854e075a367d8a, type: 2}
+    next: {fileID: 0}
   - optName: "(\u041E\u0441\u0442\u0430\u0442\u044C\u0441\u044F)"
     next: {fileID: 11400000, guid: cca70a1f579025146ae11432a0c36652, type: 2}

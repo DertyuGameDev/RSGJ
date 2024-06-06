@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f6c718bfdf5d54ca16dba14f382ded, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  Left:
+    charName: '?'
+    cha: {fileID: 0}
+    facingLeft: 0
+  Right:
+    charName: "\u042E\u0440\u0438\u0439"
+    cha: {fileID: 21300000, guid: ac24cc156dc211f44b196c354a898d6f, type: 3}
+    facingLeft: 1
+  isLeftSpeaking: 1
+  timeBetweenCharacters: 0
+  lines:
+  - "\u0421\u044B\u043D\u043E\u0447\u0435\u043A! \u0413\u043E\u0441\u043F\u043E\u0434\u0438,
+    \u0430 \u0433\u0434\u0435 \u043E\u043D?"
+  defResponses: []
+  clips: []
+  opt:
+  - optName: "\u042F \u0443 \u0442\u0435\u0431\u044F \u0438 \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u044E,
+      \u0433\u0434\u0435 \u043E\u043D"
+    next: {fileID: 11400000, guid: cb6fd7bd2b996ec449f6120d8e0a42b6, type: 2}

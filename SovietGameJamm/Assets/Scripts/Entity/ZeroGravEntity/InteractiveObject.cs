@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InteractiveObject : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class InteractiveObject : MonoBehaviour
 
     public interactTypes InteractType;
 
+    public UnityEvent button;
+
     [SerializeField] float interactionTime = 0.1f;
 
     public void Interact()
@@ -19,6 +22,10 @@ public class InteractiveObject : MonoBehaviour
         if (InteractType == interactTypes.valve) 
         {
             Debug.Log("valve");
+        }
+        else
+        {
+            button.Invoke();
         }
     }
 

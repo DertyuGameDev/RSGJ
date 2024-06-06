@@ -1166,6 +1166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractType: 0
+  button:
+    m_PersistentCalls:
+      m_Calls: []
   interactionTime: 0.1
 --- !u!1 &1498275534
 GameObject:

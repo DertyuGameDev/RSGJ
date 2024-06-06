@@ -32,4 +32,4 @@ MonoBehaviour:
     next: {fileID: 11400000, guid: 0f9ea1de4961dcf42a67efad642d0b19, type: 2}
   - optName: "\u0412\u0430\u0441 \u0432\u044B\u0437\u044B\u0432\u0430\u044E\u0442
       \u0432 \u043A\u043E\u043C\u0430\u043D\u0434\u043D\u044B\u0439 \u043F\u0443\u043D\u043A\u0442"
-    next: {fileID: 11400000, guid: 40c8cf6e729bd1f4abd0c4e7413b934a, type: 2}
+    next: {fileID: 11400000, guid: 7f28b0885fc295c4cb1ada378b41150b, type: 2}

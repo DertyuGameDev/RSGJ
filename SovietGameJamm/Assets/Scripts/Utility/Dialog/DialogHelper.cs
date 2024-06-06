@@ -29,6 +29,7 @@ public class DialogHelper : MonoBehaviour
     public StringCallback linePrinted;
     //triggers when the next line/dialogue is called
     public StringCallback nextPressed;
+    public StringCallback choosePress;
     private void Start()
     {
         EndCut = end;
@@ -100,7 +101,7 @@ public class DialogHelper : MonoBehaviour
         else {
             
             UIManager.toggleSpeakingPanel(false);
-            inst.dialogueEnded.Invoke(inst.di.name);
+            inst.dialogueEnded.Invoke(inst.di.lines[0]);
             inst.di = null;
             if (EndCut)
             {

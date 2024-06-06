@@ -355,6 +355,9 @@ MonoBehaviour:
   nextPressed:
     m_PersistentCalls:
       m_Calls: []
+  choosePress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8241194875076978833
 MonoBehaviour:
   m_ObjectHideFlags: 0

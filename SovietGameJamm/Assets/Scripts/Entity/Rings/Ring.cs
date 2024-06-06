@@ -23,8 +23,6 @@ public class Ring : MonoBehaviour
         if (other.tag == "Player" && !(isFinal && (Ringmanager.score < Ringmanager.targets.Count - 1))) {
 
             Ringmanager.AddScore();
-            print("ColliderHit");
-            
             if (isFinal) {
                 Ringmanager.inst.finishedCourse.Invoke();
             }
