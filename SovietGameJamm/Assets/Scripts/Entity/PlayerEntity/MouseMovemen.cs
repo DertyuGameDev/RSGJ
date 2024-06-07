@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseMovement : MonoBehaviour
+public class MouseMovemen : MonoBehaviour
 {
     [SerializeField] Vector2 rotationRange;
     [SerializeField] float rotationSpeed = 10f;
@@ -28,7 +28,7 @@ public class MouseMovement : MonoBehaviour
         targetAngles.y += inputH * rotationSpeed;
         targetAngles.x += inputV * rotationSpeed;
 
-        targetAngles.y = Mathf.Clamp(targetAngles.y, -rotationRange.y * 0.5f, rotationRange.y * 0.5f);
+        //targetAngles.y = Mathf.Clamp(targetAngles.y, -rotationRange.y * 0.5f, rotationRange.y * 0.5f);
         targetAngles.x = Mathf.Clamp(targetAngles.x, -rotationRange.x * 0.5f, rotationRange.x * 0.5f);
 
         followAngles = Vector3.SmoothDamp(followAngles, targetAngles, ref followVelocity, dampingTime);

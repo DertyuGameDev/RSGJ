@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     [SerializeField] public bool isGrounded;
     [SerializeField] float gravity;
-
+    public GameObject pivot;
     CharacterController controller;
     Vector3 Velocity;
 
@@ -52,8 +52,8 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = Vector3.zero;
 
-        move.x = x;
-        move.z = z;
+        move += pivot.transform.forward * z;
+        move += pivot.transform.right *x;
 
         controller.Move(transform.TransformDirection(move) * moveSpeed * Time.deltaTime);
 
