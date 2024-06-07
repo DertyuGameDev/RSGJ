@@ -555,6 +555,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 620720649}
+    - targetCorrespondingSourceObject: {fileID: -5770634479784780433, guid: 0d663ab6f5e36074cabec84807cc1dd7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620720656}
     - targetCorrespondingSourceObject: {fileID: 4383353755243004527, guid: 0d663ab6f5e36074cabec84807cc1dd7,
         type: 3}
       insertIndex: -1
@@ -1015,6 +1019,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.031538438, y: 0.0004934179, z: 0.19365808}
   m_Center: {x: -0.0042194887, y: -0.011303083, z: -0.08679001}
+--- !u!65 &620720656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620720644}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.031538438, y: 0.028515078, z: 0.039367806}
+  m_Center: {x: -0.0042194887, y: 0.0027078097, z: 0.029505713}
 --- !u!1 &623726974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5231362815219648064, guid: 0d663ab6f5e36074cabec84807cc1dd7,
@@ -1920,7 +1945,6 @@ GameObject:
   - component: {fileID: 1816302277}
   - component: {fileID: 1816302278}
   - component: {fileID: 1816302280}
-  - component: {fileID: 1816302281}
   - component: {fileID: 1816302279}
   m_Layer: 0
   m_Name: Main Camera
@@ -2062,10 +2086,10 @@ MonoBehaviour:
   throttleIncrement: 0.1
   minThrottle: -2
   maxThrottle: 2
-  maxThrust: 3
-  responsivness: 3
-  pitchModifier: 1
-  yawModifier: 1
+  maxThrust: 4
+  responsivness: 4
+  pitchModifier: 4
+  yawModifier: 4
   throttle: 0
 --- !u!65 &1816302279
 BoxCollider:
@@ -2115,19 +2139,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1816302281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816302273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5bad600799974f45ab270f5b1bd8b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0
 --- !u!1 &1869466945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7304357538255511233, guid: 0d663ab6f5e36074cabec84807cc1dd7,
