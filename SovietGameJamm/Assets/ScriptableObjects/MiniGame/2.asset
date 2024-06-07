@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Left:
     charName: '?'
-    cha: {fileID: 0}
+    cha: {fileID: 21300000, guid: 1617804d20a8b6948bbec934666e35c1, type: 3}
     facingLeft: 0
   Right:
     charName: "\u042E\u0440\u0438\u0439"
