@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 0a4f737807c03204aa007805918c7997
   - enabled: 1
+    path: Assets/Scenes/Comic.unity
+    guid: 96c381efa66bf9145b1c7bb21128efde
+  - enabled: 1
     path: Assets/Scenes/Polygon2D.unity
     guid: 1fc170865a6a27f4f90ad9e1c8429001
   - enabled: 1
