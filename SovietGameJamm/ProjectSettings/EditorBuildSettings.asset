@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: c78b15a31ec26f241a881ec7e96e6649
+  - enabled: 1
+    path: Assets/Scenes/CentrifugeScene.unity
+    guid: 6cea018a7c3336b4cbd2b9ec87ebd0ae
+  - enabled: 1
+    path: Assets/Scenes/ImortalMerge.unity
+    guid: c5bcc954f91a50d408ab58f1d998e683
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 654c8830bece3194bb192e6c91af403a,
       type: 2}
