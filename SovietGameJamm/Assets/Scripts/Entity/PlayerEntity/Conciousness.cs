@@ -27,7 +27,7 @@ public class Conciousness : MonoBehaviour
        
         if (!dead)
         {
-            if (rc.t >= rc.simulationTime*1.2f)
+            if (rc.t >= rc.simulationTime*1.3f)
             {
                 win.Invoke();
                 dead = true;
