@@ -1234,6 +1234,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1505809069}
   - component: {fileID: 1505809070}
+  - component: {fileID: 1505809071}
+  - component: {fileID: 1505809072}
   m_Layer: 0
   m_Name: GoodEvil
   m_TagString: Untagged
@@ -1273,8 +1275,53 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 6350909687733651224, guid: 2fb4d0051c9af9e4dadcc0812516a630, type: 2}
     value: {fileID: 1197708895}
+  - key: {fileID: 2284035129296651996, guid: 2fb4d0051c9af9e4dadcc0812516a630, type: 2}
+    value: {fileID: 1505809072}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &1505809071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505809068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3caf181d9ecd84d4ba4423c2cfe1f836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Menu
+--- !u!114 &1505809072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505809068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: cb2d92ca7024e97499c9bc8aa13e320a, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1505809071}
+          m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
+          m_MethodName: StartScenes
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1533348085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,7 +1554,11 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: 6355541954455537087, guid: f55157ff7cae7284bbd88da9adf4d7d2, type: 2}
+    value: {fileID: 1197708895}
+  - key: {fileID: 4595430491785758427, guid: f55157ff7cae7284bbd88da9adf4d7d2, type: 2}
+    value: {fileID: 1505809072}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1696744771
