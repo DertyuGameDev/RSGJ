@@ -5,12 +5,12 @@ using UnityEngine;
 public class DialogueRun2 : MonoBehaviour
 {
     public Dialogue Dialogue;
-    public PlayerController2D PlayerController;
+    public PlayerController2D PlayerController1;
     private void OnTriggerEnter(Collider other)
     {
         GetComponent<BoxCollider>().enabled = false;
-        PlayerController.enabled = false;
-        PlayerController.gameObject.GetComponent<Animator>().Play("Idle");
+        PlayerController1.enabled = false;
+        PlayerController1.gameObject.GetComponent<Animator>().Play("Idle");
         DialogHelper.startd(Dialogue);
     }
 }
