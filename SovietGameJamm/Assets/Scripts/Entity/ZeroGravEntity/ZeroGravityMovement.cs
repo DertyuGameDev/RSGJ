@@ -29,9 +29,12 @@ public class ZeroGravityMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        
+    }
+    public void lockC()
+    {
         Cursor.lockState = CursorLockMode.Locked;
     }
-
     private void checkInputs() 
     {
         yaw = Input.GetAxis("Yaw");
