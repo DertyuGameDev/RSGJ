@@ -27,6 +27,7 @@ public class PlaneMovementV2 : MonoBehaviour
     public Transform negat;
     public Color On;
     public Color Off;
+    public AudioSource aud;
     private void Awake()
     {
         zavod = 0;
@@ -45,10 +46,12 @@ public class PlaneMovementV2 : MonoBehaviour
         scrol.size = zavod / 100;
         if (driverIsOn)
         {
+            aud.enabled = true;
             scrol.gameObject.GetComponent<Image>().color =  On;
         }
         else
         {
+            aud.enabled = false;
             scrol.gameObject.GetComponent<Image>().color = Off;
         }
         g = onGround;
