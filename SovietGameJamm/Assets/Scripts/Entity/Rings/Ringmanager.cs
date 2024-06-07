@@ -32,5 +32,6 @@ public class Ringmanager : MonoBehaviour
     }
     public static void AddScore() {
         score++;
+        
     }
 }

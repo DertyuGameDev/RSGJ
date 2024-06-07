@@ -51,8 +51,8 @@ public class ZeroGravityMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.AddForce(transform.forward * maxThrust * throttle);
-        rb.AddTorque(transform.up * rollY * responsivness * yawModifier);
-        rb.AddTorque(transform.right * pitch * responsivness * pitchModifier);
-        rb.AddTorque(-transform.forward * yaw * responsivness * yawModifier);
+        rb.AddTorque(transform.up * rollY * responsivness * yawModifier*Time.fixedDeltaTime);
+        rb.AddTorque(transform.right * pitch * responsivness * pitchModifier * Time.fixedDeltaTime);
+        rb.AddTorque(-transform.forward * yaw * responsivness * yawModifier * Time.fixedDeltaTime);
     }
 }
