@@ -64,6 +64,31 @@ public class RunCutscene : MonoBehaviour
         {
             CutsceneManager.Instance.StartCutscene("True");
         }
+        else if (line1 == "Ага, есть в списке, ну что, добро пожаловать туда, откуда выходят героями!")
+        {
+            CutsceneManager.Instance.StartCutscene("Trials");
+        }
+        else if (line1 == "Посмотрим...")
+        {
+            Relationship.relationship -= 1;
+            CutsceneManager.Instance.StartCutscene("Ending1");
+        }
+        else if (line1 == "Вперед!")
+        {
+            Relationship.relationship += 1;
+            CutsceneManager.Instance.StartCutscene("Ending");
+        }
+        else if (line1 == "Юрий Подольцев! Поздравляю!")
+        {
+            if (Relationship.relationship >= 0) 
+            {
+                CutsceneManager.Instance.StartCutscene("EvilEnd");
+            }
+            else
+            {
+                CutsceneManager.Instance.StartCutscene("GoodEnd");
+            }
+        }
         else
         {
             CutsceneManager.Instance.StartCutscene(map[line1]);

@@ -3318,7 +3318,7 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1605254278}
+        - m_Target: {fileID: 1662073554}
           m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
           m_MethodName: StartScenes
           m_Mode: 1
@@ -4549,6 +4549,8 @@ PlayableDirector:
     value: {fileID: 525194722}
   - key: {fileID: 3335077863629378584, guid: 4bd54e4cefd90904b9f8f830ec352be9, type: 2}
     value: {fileID: 1662073551}
+  - key: {fileID: -1978046942633503208, guid: 4bd54e4cefd90904b9f8f830ec352be9, type: 2}
+    value: {fileID: 525194722}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &2036734536

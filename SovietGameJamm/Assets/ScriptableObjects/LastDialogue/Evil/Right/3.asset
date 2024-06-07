@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f6c718bfdf5d54ca16dba14f382ded, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  Left:
+    charName: "\u0413\u0435\u0440\u043C\u0430\u043D"
+    cha: {fileID: 21300000, guid: 0d86c1d9aa4d2464391c1f40a80f1aaf, type: 3}
+    facingLeft: 0
+  Right:
+    charName: "\u042E\u0440\u0438\u0439"
+    cha: {fileID: 21300000, guid: ac24cc156dc211f44b196c354a898d6f, type: 3}
+    facingLeft: 1
+  isLeftSpeaking: 0
+  timeBetweenCharacters: 0
+  lines:
+  - "\u041A\u0430\u043A\u043E\u0439 \u0436\u0435 \u0442\u044B \u0441\u0430\u043C\u043E\u043D\u0430\u0434\u0435\u044F\u043D\u043D\u044B\u0439
+    \u044D\u0433\u043E\u0438\u0441\u0442! \u042F \u043D\u0435 \u0431\u0443\u0434\u0443
+    \u0431\u043E\u043B\u044C\u0448\u0435 \u0441 \u0442\u043E\u0431\u043E\u0439 \u0440\u0430\u0437\u0433\u043E\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044C,
+    \u043D\u0438\u043A\u043E\u0433\u0434\u0430, \u0438 \u0431\u0443\u0434\u044C \u0443\u0432\u0435\u0440\u0435\u043D,
+    \u0435\u0441\u043B\u0438 \u044F \u043F\u043E\u043B\u0435\u0447\u0443 \u0432 \u043A\u043E\u0441\u043C\u043E\u0441
+    - \u044F \u0434\u0430\u0436\u0435 \u0438\u043C\u0435\u043D\u0438 \u0442\u0432\u043E\u0435\u0433\u043E
+    \u043D\u0435 \u0443\u043F\u043E\u043C\u044F\u043D\u0443!"
+  defResponses: []
+  clips: []
+  opt:
+  - optName: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E, \u043F\u043E\u0442\u043E\u043C\u0443
+      \u0447\u0442\u043E \u0442\u044B \u043D\u0435 \u043F\u043E\u043B\u0435\u0442\u0438\u0448\u044C
+      \u0432 \u043A\u043E\u0441\u043C\u043E\u0441!"
+    next: {fileID: 11400000, guid: f1a4b6749ec860744a88ff72bf1f595d, type: 2}
